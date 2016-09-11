@@ -64,7 +64,7 @@ void afficher_bloc(FILE* f) {
 		sprintf(concat, "%c", car >= 32 ? car : ' ');
 		strcat(chaine_ascii, concat);
 
-		if(i == T_BLOC/2-1) {
+		if(i == T_BLOC/2-1) {		// ajouter espace apres 8 caracteres lus
 			strcat(chaine_hexa, " ");
 			strcat(chaine_ascii, " ");
 		}
